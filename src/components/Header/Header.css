@@ -31,4 +31,7 @@
   .headerTitle {
     font-size: 1rem;
   }
+  .logo {
+    width: 10vw;
+  }
 }
