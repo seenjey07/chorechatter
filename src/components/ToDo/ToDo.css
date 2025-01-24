@@ -1,0 +1,112 @@
+.todoSection {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f5bcba;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 90%;
+  height: 65vh;
+}
+
+.todoTitle {
+  font-size: 1.2rem;
+  margin: 0.5rem;
+}
+
+.todoListContainer {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 50vh;
+  margin-bottom: 1rem;
+  overflow-x: hidden;
+  background-color: #f5bcba;
+  display: flex;
+  flex-direction: column;
+}
+
+.todoList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #f3dcdc;
+  border-radius: 4px;
+}
+
+.noTasks {
+  text-align: center;
+  font-size: 0.7rem;
+  margin: 0.5rem 0;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+  font-size: 0.75rem;
+}
+
+.todoItem.completed span {
+  text-decoration: line-through;
+  font-style: italic;
+  color: gray;
+}
+
+.todoItem input {
+  border: 1px solid #e3aadd;
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+}
+
+.removeTaskButton {
+  margin-left: auto;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+  color: rgb(230, 63, 102);
+  cursor: pointer;
+}
+
+.addTaskForm {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.addTaskInput {
+  flex-grow: 1;
+  padding: 0.5rem;
+  border: 1px solid #e3aadd;
+  border-radius: 4px;
+  font-size: 0.7rem;
+}
+
+.addTaskButton {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  color: #1d1c1c;
+  background-color: #f3dcdc;
+  cursor: pointer;
+  font-size: 0.7rem;
+  font-weight: bold;
+  border: 1px solid #e3aadd;
+}
+
+.addTaskButton:hover {
+  background-color: #e3aadd;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .todoSection {
+    height: 30vh;
+  }
+  .todoListContainer {
+    max-height: 30vh;
+  }
+}
